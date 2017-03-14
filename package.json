@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --host $IP --port $PORT --progress --inline --hot" //-- c9.io 용
+    "dev": "webpack-dev-server --host $IP --port $PORT --progress --inline --hot" 
   },
   "author": "",
   "license": "ISC",
