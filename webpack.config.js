@@ -1,7 +1,13 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './src/index.js',
+    // c9.io 용 
+    entry: [
+        'webpack-dev-server/client?https://0.0.0.0:8080',
+        'webpack/hot/dev-server',
+         './src/index.js'
+    ],
+    //entry: './src/index.js',
 
     output: {
         path: __dirname + '/public/',
@@ -9,10 +15,6 @@ module.exports = {
     },
 
     devServer: {
-        hot: true,
-        inline: true,
-        host: '0.0.0.0',
-        port: 4000,
         contentBase: __dirname + '/public/',
     },
 
